@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Космический Шутер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="ui">
+            <div id="score">Очки: 0</div>
+            <div id="lives">Жизни: 3</div>
+            <div id="level">Уровень: 1</div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="controls">
+            <button id="leftBtn">←</button>
+            <button id="fireBtn">FIRE</button>
+            <button id="rightBtn">→</button>
+        </div>
+        <div id="gameOver" class="hidden">
+            <h2>ИГРА ОКОНЧЕНА</h2>
+            <p>Ваш счет: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Играть снова</button>
+        </div>
+        <div id="startScreen">
+            <h1>КОСМИЧЕСКИЙ ШУТЕР</h1>
+            <p>Уничтожай врагов и набирай очки!</p>
+            <button id="startBtn">НАЧАТЬ ИГРУ</button>
+            <div class="controls-info">
+                <p>Управление: ← → или A D для движения, ПРОБЕЛ для стрельбы</p>
+                <p>Или используй кнопки на экране</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
